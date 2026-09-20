@@ -8,11 +8,14 @@ export function Navbar() {
         <Logo />
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-[#16140f]/70 md:flex">
-          <Link href="#features" className="transition hover:text-[#16140f]">
+          <Link href="/#features" className="transition hover:text-[#16140f]">
             Features
           </Link>
-          <Link href="#pricing" className="transition hover:text-[#16140f]">
+          <Link href="/#pricing" className="transition hover:text-[#16140f]">
             Pricing
+          </Link>
+          <Link href="/changelog" className="transition hover:text-[#16140f]">
+            Changelog
           </Link>
         </nav>
 

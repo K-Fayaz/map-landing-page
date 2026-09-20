@@ -4,9 +4,9 @@ import { Logo } from "./Logo";
 type FooterLink = { label: string; href: string };
 
 const productLinks: FooterLink[] = [
-  { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Features", href: "/#features" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 const companyLinks: FooterLink[] = [
@@ -16,6 +16,7 @@ const companyLinks: FooterLink[] = [
 ];
 
 const moreLinks: FooterLink[] = [
+  { label: "Changelog", href: "/changelog" },
   { label: "Twitter", href: "#" },
   { label: "YouTube", href: "#" },
 ];
