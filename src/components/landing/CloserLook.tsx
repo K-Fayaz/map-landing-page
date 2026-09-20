@@ -1,29 +1,26 @@
-import { Placeholder } from "./Placeholder";
-
 const features = [
   {
-    title: "Start anywhere",
+    title: "Create your project",
     description:
-      "Search for a location and move straight to it. Zoom, pan and explore the world with ease.",
-    imageLabel: "Search and navigate the map",
+      "Start a new MapWise project in seconds and pick up right where inspiration strikes.",
+    video: "/create-project.mp4",
   },
   {
-    title: "Camera & timeline",
+    title: "Choose your aspect ratio",
     description:
-      "Move the camera, reveal places and time it all to your audio on a timeline that's easy to use.",
-    imageLabel: "Camera and audio timeline",
+      "Vertical for Shorts and Reels, widescreen for YouTube — pick the format that fits where your video is going.",
+    video: "/select-aspect-ratio.mp4",
   },
   {
-    title: "Map overlays & flags",
+    title: "Import your audio",
     description:
-      "Highlight countries, add flags, use overlays and customize the look to match your story.",
-    imageLabel: "Map overlays and flags",
+      "Drop in narration or music and build your animation around it.",
+    video: "/import-audio.mp4",
   },
   {
-    title: "Export & publish",
-    description:
-      "Export your finished map animation as MP4 — with audio when you need it.",
-    imageLabel: "Export video dialog",
+    title: "Add scenes",
+    description: "Build your story scene by scene on the map.",
+    video: "/add-scenes.mp4",
   },
 ];
 
@@ -58,7 +55,15 @@ export function CloserLook() {
 
             <div className="mt-5 overflow-hidden rounded-xl border border-black/10 bg-ink">
               <div className="aspect-[16/10] w-full">
-                <Placeholder label={feature.imageLabel} tone="dark" />
+                <video
+                  src={feature.video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>
