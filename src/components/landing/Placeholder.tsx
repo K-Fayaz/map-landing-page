@@ -9,8 +9,8 @@ export function Placeholder({
   className = "",
   tone = "light",
 }: PlaceholderProps) {
-  const bg = tone === "dark" ? "1c1c1f" : "e3e1f5";
-  const fg = tone === "dark" ? "6b6b70" : "9a97c2";
+  const bg = tone === "dark" ? "1c1c1f" : "f0e4c4";
+  const fg = tone === "dark" ? "6b6b70" : "b39a5f";
 
   return (
     <img
